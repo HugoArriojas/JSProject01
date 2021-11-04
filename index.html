@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hugo Arriojas Project 1</title>
+    <link rel="shortcut icon" href="./assets/favicon.png">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body class="body-neutral">
+<!-- Start of splash screen/intro section -->
+<div class="splash">
+    <img src="./assets/disaster logo.png" alt="icon of natural disasters" class="disaster">
+    <h1>Hello and welcome to the Emergency Preparedness Quiz™</br>
+        This quiz will test your reactions in the event of an emergency!</br> Think you're prepared?
+    </h1>
+    <button class="start">Let's find out!</button>
+</div>
+<!-- End of splash screen/intro section -->
+
+<!-- Start of quiz section -->
+<main class="quizWrap">
+    <!-- Quiz progress -->
+    <h2>Question <span class="progress">1</span> of <span class="num"></span></h2>
+    <div class="quiz">
+        <!-- Displays quiz question -->
+        <div class="question" id="question"></div>
+        <form>
+            <fieldset>
+                <!-- Answer options -->
+                <legend>Options:</legend>
+                <input type="radio" name="options" class="radio" value=0>
+                <label for="option1" id="option1">Option1</label><br>
+                <input type="radio" name="options" class="radio" value=1>
+                <label for="option2" id="option2">Option2</label><br>
+                <input type="radio" name="options" class="radio" value=2>
+                <label for="option3" id="option3">Option3</label>
+            </fieldset>
+            <!-- Submit button -->
+            <div class="submission">
+                <input type="submit" value="Submit Answer" class="submit"></input>
+            </div>
+        </form>
+        <!-- Next question -->
+        <button class="nextQ">Next Question</button>
+        <p class="safety">Safety points: <span class="scoreNum">0</span></p>
+    </div>
+</main>
+<!-- End of quiz section -->
+
+<!-- Start of scoreboard question -->
+<div class="board">
+    <!-- Shows score and message -->
+    <h1>You got <span class="score"></span> <span class="message"></span></br> Thank you for taking my quiz!
+    </h1>
+    <img src="./assets/disaster logo.png" alt="icon of natural disasters" class="disaster">
+    <button class="again">
+        <h2>Again?</h2>
+    </button>
+</div>
+<!-- End of scoreboard section -->
+
+<!-- Start of footer -->
+<footer>
+    <p>Created at <a href="https://junocollege.com/">Juno College</a></p>
+</footer>
+<!-- End of footer -->
+
+<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script>
+<script src="./script.js"></script>
+
+</body>
+</html>
